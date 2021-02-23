@@ -1,0 +1,27 @@
+.align-self-center{
+    align-self: center;
+  }
+
+  .btn-next{     
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 40px;
+    padding: 1.5% 14%;
+  }
+
+  .max-img-height{
+      max-height: 95vh;
+  }
+
+  .rel-pos{
+      position: relative;
+  }
+
+  .abs-pos{
+      position: absolute;
+      margin: auto;
+  }
+
+  .no-padding{
+    padding: 0 !important;    
+  }

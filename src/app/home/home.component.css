@@ -1,0 +1,17 @@
+.form-input{
+    background: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-submit{     
+    font-size: 1.3em;
+    font-weight: 400;
+    border-radius: 40px;
+    padding: 1.5% 14%;
+  }
+
+  .img-50px{
+      width: 50px;
+  }

@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-12 pt-3">
+        <h2 class="text-center">Welcome to Treasure Hunter</h2>
+    </div>
+    <div class="col-12 pt-3 text-center">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="username" class="float-left">Name:</label>
+                <input type="text" formControlName="username" class="form-control form-input" placeholder="Enter name" id="username">
+                <div *ngIf="submitted && regFrmCntrl.username.errors" class="invalid-feedback">
+                    <div *ngIf="regFrmCntrl.username.errors.required">Name is required</div>
+                </div>
+            </div>            
+            <p><img class="img-fluid img-50px" src="../assets/images/character/gold_coins.png" />Earn gold coins <span class="badge badge-warning">{{gold_coins}}</span></p>
+            <button type="submit" class="btn btn-light btn-submit">Choose hunter</button>
+        </form>
+    </div>
+</div>

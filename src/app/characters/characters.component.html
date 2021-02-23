@@ -1,0 +1,45 @@
+<div class="row">
+<div class="col-12">
+  <h2 class="text-center pt-3">{{title}}</h2>
+</div>
+  <div class="col-12">    
+<swiper [config]="config" class="over-flow-hide full-height" #usefulSwiper>
+    <div class="swiper-wrapper">        
+      <div class="swiper-slide" *ngFor="let slide of slideData">
+        <div class="row">
+          <div class="col-12  pt-3">
+            <h5 class="text-center">{{slide.name}}</h5>
+          </div> 
+          <div class="col-12  pt-3">
+            <a [routerLink]="['/choose-tools',slide.id]"><img class="img-fluid image-max" [src]="slide.characterimage" /></a>
+          </div>
+          <div class="col-12 pt-3">
+            <div class="row">
+              <div class="col-5">
+                <h4 class="float-right pt-10">{{slide.luck}}</h4>
+                <img  class="float-right img-58px" src="../assets/images/character/luck.png" />                
+              </div>
+              <div class="col-2"></div>
+              <div class="col-5">
+                <img class="float-left img-50px" src="../assets/images/character/hit_points.png"/>
+                <h4 class="float-left pt-10 pl-2">{{slide.hit_points}}</h4>
+              </div>
+            </div>
+          </div>               
+        </div>
+                     
+      </div>
+    </div>      
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  
+  </swiper>  
+  </div> 
+  <div class="col-12  pt-3 text-center">
+    <button (click)="next()" class="btn btn-light btn-next">Next</button>   
+  </div>
+</div>

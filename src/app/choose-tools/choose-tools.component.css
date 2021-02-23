@@ -1,0 +1,78 @@
+.btn-black{
+    font-size: 1em;
+    color: white;
+    background: #212020;
+    border-radius: 40px;
+    padding: 5px 12px;
+  }
+
+  .over-flow-hide{
+    overflow: hidden;
+  }
+
+  .image-max{
+    height: 60vh;
+  }
+  .image-thumb{
+    height: 30vh;
+  }
+  
+  .btn-next{     
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 40px;
+    padding: 1.5% 14%;
+  }  
+
+  .img-58px{
+    width: 58px;
+  }
+
+  .img-50px{
+    max-width: 50px;
+    width: 11vw;
+  }
+
+  .pt-10{
+    padding-top: 10px;
+  }
+
+  .img-90px{
+    width: 20vw;
+    max-width: 90px;
+    padding-left: 20px;
+  }
+
+  .align-self-center{
+    align-self: center;
+  }
+
+  .btn-plus-minus{   
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;}
+
+    .img-fluid {
+      cursor:pointer;
+    }
+
+   
+
+/*Start Media Query */
+@media only screen and (max-width: 480px) {
+  .no-padding{
+    padding: 0 !important;    
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .gold-coins{
+    max-width: 200px !important;    
+  }
+
+  .abs-pos{
+    position: absolute;
+    left: 16%;
+  } 
+}

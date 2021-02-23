@@ -1,0 +1,9 @@
+
+.background-image{
+    height: 99.93vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%!important;
+    /* background-position: center; */
+} 
+

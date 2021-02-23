@@ -1,0 +1,95 @@
+<div class="row">
+    <div class="col-12 pt-3">
+      <button class="btn no-padding abs-pos float-left" (click)="OnCharacter()"> <img class="img-fluid" src="./assets/images/icons/arrow_back_ios-white-24dp.svg"/> </button> 
+      <h2 class="text-center">{{title}}</h2>
+    </div>    
+      <div class="col-12  pt-3">
+       <div class="row">
+         <div class="col-4 no-padding align-self-center text-center">
+            <h4>Trinket</h4>
+         </div>
+
+         <div class="col-4 no-padding align-self-center text-center">
+          <button class="btn-plus-minus pr-2" (click)="OnRemoveTool('1')"><img class="img-fluid img-50px" src="../assets/images/icons/remove-white-24dp.svg"/></button>
+          <button class="btn-plus-minus pl-2" (click)="OnAddTool('1')"><img class="img-fluid img-50px" src="../assets/images/icons/add-white-24dp.svg"/></button>
+        </div>
+
+         <div class="col-4 no-padding">
+          <h5 class="float-left pt-10">{{Trinket}}</h5>
+          <img  class="float-left img-90px" src="../assets/images/equipment/trinket.png" />   
+         </div>
+       </div>      
+      </div>
+
+      <div class="col-12 pt-3">
+        <div class="row">
+          <div class="col-4 no-padding align-self-center text-center">
+             <h4>Weapon</h4>
+          </div>
+  
+          <div class="col-4 no-padding align-self-center text-center">
+            <button class="btn-plus-minus pr-2" (click)="OnRemoveTool('2')"><img class="img-fluid img-50px" src="../assets/images/icons/remove-white-24dp.svg"/></button>
+            <button class="btn-plus-minus pl-2" (click)="OnAddTool('2')"><img class="img-fluid img-50px" src="../assets/images/icons/add-white-24dp.svg"/></button>
+         </div>
+  
+          <div class="col-4 no-padding">
+           <h5 class="float-left pt-10">{{Weapon}}</h5>
+           <img  class="float-left img-90px" src="../assets/images/equipment/weapon.png" />   
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 pt-3">
+        <div class="row">
+          <div class="col-4 no-padding align-self-center text-center">
+             <h4>Armor</h4>
+          </div>
+  
+          <div class="col-4 no-padding align-self-center text-center">
+            <button class="btn-plus-minus pr-2" (click)="OnRemoveTool('3')"><img class="img-fluid img-50px" src="../assets/images/icons/remove-white-24dp.svg"/></button>
+            <button class="btn-plus-minus pl-2" (click)="OnAddTool('3')"><img class="img-fluid img-50px" src="../assets/images/icons/add-white-24dp.svg"/></button>
+          </div>
+  
+          <div class="col-4 no-padding">
+           <h5 class="float-left pt-10">{{Armor}}</h5>
+           <img  class="float-left img-90px" src="../assets/images/equipment/armor.png" />   
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 pt-4">
+          <div class="row">
+              <div class="col-4 align-self-center text-center">
+                <img class="img-fluid gold-coins" src="../assets/images/character/gold_coins.png" />
+                <h4>{{gold_coins}}</h4>
+              </div>
+              <div class="col-4 no-padding">
+                <div class="row">
+                    <div class="col-12 pt-3">
+                      <h4 class="float-right pt-10 pl-2">{{SelectedCharacter.luck}}</h4>
+                      <img  class="float-right img-50px" src="../assets/images/character/luck.png" />                
+                    </div>                    
+                    <div class="col-12 pt-3">
+                        <h4 class="float-right pt-10 pl-2">{{SelectedCharacter.hit_points}}</h4>
+                      <img class="float-right img-50px" src="../assets/images/character/hit_points.png"/>                      
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-4">
+                <img class="img-fluid image-thumb" (click)="OnCharacter()" [src]="SelectedCharacter.characterimage" />
+              </div>
+          </div>
+       
+      </div>   
+      <div class="col-12  pt-3">
+         <div class="row">
+             <div class="col-8 no-padding">
+                <button class="btn btn-light btn-next float-right" (click)="OnConfirm()">Start hunting</button> 
+             </div>             
+             <div class="col-4 no-padding">
+                <button class="btn btn-black" (click)="OnCharacter()">{{SelectedCharacter.name}}</button> 
+             </div>
+         </div>
+      </div>
+    </div>
